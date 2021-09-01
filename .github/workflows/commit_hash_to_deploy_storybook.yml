@@ -7,6 +7,8 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
+    env:
+      PUBLIC_URL: https://ross146.github.io
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
